@@ -1,0 +1,68 @@
+Version: 1.0
+AgroManagement:
+- 2020-01-01:
+    CropCalendar:
+      crop_name: potato
+      variety_name: Fontane
+      crop_start_date: 2020-04-21
+      crop_start_type: sowing
+      crop_end_date: 2020-10-07
+      crop_end_type: harvest
+      max_duration: 400
+    TimedEvents:
+    - event_signal: irrigate
+      name: Irrigation application table
+      comment: All irrigation amounts in cm
+      events_table:
+      - 2020-05-02:
+          amount: 2.5
+          efficiency: 1
+      - 2020-06-24:
+          amount: 2.5
+          efficiency: 1
+      - 2020-07-21:
+          amount: 2.5
+          efficiency: 1
+      - 2020-08-03:
+          amount: 2.5
+          efficiency: 1
+      - 2020-08-10:
+          amount: 2.5
+          efficiency: 1
+    - event_signal: apply_n_snomin
+      name: Timed N application table
+      comment: All fertilizer N amounts in kg/ha
+      events_table:
+      - 2020-04-12:
+          amount: 64659.92647058822
+          application_depth: 20
+          cnratio: 17.05882352941176
+          f_orgmat: 0.064
+          f_NH4N: 0.0022
+          f_NO3N: 0.0
+          initial_age: 3.16
+      - 2020-04-20:
+          amount: 48.6
+          application_depth: 20
+          cnratio: 0.0
+          f_orgmat: 0.0
+          f_NH4N: 0.5
+          f_NO3N: 0.5
+          initial_age: 0.0
+      - 2020-06-17:
+          amount: 40.5
+          application_depth: 20
+          cnratio: 0.0
+          f_orgmat: 0.0
+          f_NH4N: 0.5
+          f_NO3N: 0.5
+          initial_age: 0.0
+      - 2020-07-25:
+          amount: 32.4
+          application_depth: 20
+          cnratio: 0.0
+          f_orgmat: 0.0
+          f_NH4N: 0.5
+          f_NO3N: 0.5
+          initial_age: 0.0
+    StateEvents: null
