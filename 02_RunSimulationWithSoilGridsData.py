@@ -34,7 +34,7 @@ def main():
     fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(16, 8))
     df["LAI"].plot(ax=axs[0], label="LAI", color='k')
     df["WST"].plot(ax=axs[1], label="Stems")
-    df["WLV"].plot(ax=axs[1], label="Green leaves")
+    df["WLVG"].plot(ax=axs[1], label="Green leaves")
     df["WSO"].plot(ax=axs[1], label="Tubers")
     axs[0].set_title("Leaf Area Index")
     axs[1].set_title("Crop biomass")
