@@ -197,9 +197,6 @@ class SoilGridsDataProvider():
         df_vgn["SMfromPF"] = SMfromPF_perlayer
         self.vgnd = df_vgn.to_dict()
 
-    def get_soild(self):
-        return 0
-
     def get_zmin(self, val):
         zmin = float(val.split("-")[0])
         return zmin
