@@ -1,0 +1,1 @@
+This folder will contain the simulation output of example 03.
