@@ -1,0 +1,1 @@
+This folder will contain the BOFEK2020 soil map.
